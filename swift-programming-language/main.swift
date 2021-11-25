@@ -57,3 +57,64 @@ case 20:
 default:
     print("none of them")
 }
+
+
+
+
+// Loop
+for index in 1...20 {
+    print(index)
+}
+
+print("\n")
+
+for index in stride(from: 0, through: 60, by: 2) {
+    print(index)
+}
+
+print("\n")
+
+var number =  Int.random(in: 0 ..< 30)
+
+while number < 6 {
+    print("random number:  \(number)")
+    number = Int.random(in: 0 ..< 20)
+}
+
+
+// Arrays
+var names = ["john", "isac", "david", "Ahmet"]
+names.append("new name")
+print("\(names.count)")
+names.insert("new name1", at: 0)
+names.remove(at: 0)
+for name in names{
+    print(name)
+}
+
+
+// Sets
+var IDs:Set = [123,345,6767,87878,98989,80898, 3434]
+
+IDs.insert(123)
+
+for data in IDs{
+    print(data)
+}
+
+// Dictionaries
+var list1 = [Int:String]()
+list1[121] = "Armaan"
+
+list1.removeValue(forKey: 121)
+print(list1.count)
+print(list1.isEmpty)    // bool
+
+for (id, name) in list1 {
+    print("id: \(id), name: \(name)")
+}
+
+
+
+
+
