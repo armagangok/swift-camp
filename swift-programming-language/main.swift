@@ -116,5 +116,16 @@ for (id, name) in list1 {
 
 
 
+// Functions
+func sumVoid(num1:Int, num2:Int) {    //void function
+    print(num1 + num2)
+}
+
+func sum(_ num1:Int,_ num2:Int) -> (sum:Int, sub:Int) {    //return function
+    return (num1+num2, num1-num2)
+}
+
+print(sum(30, 30))
+print(sum(40, 50).sum, sum(40, 50).sub)
 
 
